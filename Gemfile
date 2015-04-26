@@ -28,9 +28,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+group :stage, :development, :test do
+  gem 'factory_girl_rails', '~> 4.5.0'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'shoulda-matchers', '~> 2.8.0'
