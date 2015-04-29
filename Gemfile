@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Project-specific gems
+gem 'devise', '~> 3.4.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -28,6 +31,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+#
+group :development, :test do
+  gem 'letter_opener', '~> 1.3.0'
+end
 
 group :stage, :development, :test do
   gem 'factory_girl_rails', '~> 4.5.0'
@@ -36,12 +43,6 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
-  gem 'shoulda-matchers', '~> 2.8.0'
-  gem 'rspec-its', '~> 1.2.0'
-  gem 'json-schema', '~> 2.5.1'
-  gem 'database_cleaner', '~> 1.4.1'
-
   gem 'rubocop', require: false
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -53,4 +54,10 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the
   # background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'rspec-rails', '~> 3.0'
+  gem 'shoulda-matchers', '~> 2.8.0'
+  gem 'rspec-its', '~> 1.2.0'
+  gem 'json-schema', '~> 2.5.1'
+  gem 'database_cleaner', '~> 1.4.1'
 end
