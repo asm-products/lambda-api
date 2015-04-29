@@ -18,4 +18,14 @@ RSpec.describe User, type: :model do
     its(:last_name) { is_expected.to be_present }
     its(:auth_tokens) { is_expected.to be_present }
   end
+
+  describe '.destroy' do
+    let(:user) { create :user }
+
+    before { user.destroy }
+
+    subject { user }
+
+    its(:auth_tokens) { is_expected.to be_empty }
+  end
 end
