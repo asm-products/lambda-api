@@ -1,0 +1,1 @@
+{"virtualbox":{"vagrant-root":{"id":"vagrant-root","owner":"vagrant","group":"vagrant","mount_options":["dmode=775,fmode=664"],"guestpath":"/vagrant","hostpath":"/Users/Alex/lambda-api","disabled":false}}}

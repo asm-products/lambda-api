@@ -1,0 +1,5 @@
+# variables
+DBNAME=lambda_api_development
+DBTESTNAME=lambda_api_test
+DBUSER=vagrant
+DBPASSWD=password
