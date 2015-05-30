@@ -26,6 +26,10 @@ development:
   <<: *default
   database: lambda_api_development
 
+integration:
+  <<: *default
+  database: lambda_api_integration
+
 stage:
   <<: *default
   database: lambda_api_stage
