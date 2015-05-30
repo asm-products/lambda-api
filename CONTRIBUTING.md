@@ -32,6 +32,9 @@ particular instance, feel free to bring it up in your pull request.
 9. Issue a PR with your work when it is ready for review. (Note: Only PRs from
 those with valid Assembly account will be merged).
 
+10. Once merged, your code will be deployed to http://int.playlambda.com! For
+now, this process will be manual. In the future, we'll add CI via Semaphore.
+
 ## Vagrant
 
 ### Vagrant: setup
