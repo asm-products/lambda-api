@@ -11,14 +11,14 @@ are now an owner of Lambda!
 
 4. Get your development environment set up. Read the **Vagrant Setup** section
 below for further instruction.
-chat (here)[https://assembly.com/chat/lambda]
+chat [here](https://assembly.com/chat/lambda)
 
-5. Find an (interesting bounty)[https://assembly.com/lambda/bounties] on
-Assembly or suggest one in (chat)[https://assembly.com/chat/lambda].
+5. Find an [interesting bounty](https://assembly.com/lambda/bounties) on
+Assembly or suggest one in [chat](https://assembly.com/chat/lambda).
 
 6. Complete the bounty on a branch off of the `develop` branch. Your branch should
 reference the bounty number and include a short description. For example, if I
-take on (this)[https://assembly.com/lambda/bounties/5] bounty my branch might be
+take on [this](https://assembly.com/lambda/bounties/5) bounty my branch might be
 `5_add_contrib_guides`. No code will be merged without referencing a bounty
 number - you should be rewarded for your work.
 
@@ -36,10 +36,10 @@ those with valid Assembly account will be merged).
 
 ### Vagrant: setup
 
-1. (Install VirtualBox)[https://www.virtualbox.org/wiki/Downloads]. Pick the
+1. [Install VirtualBox](https://www.virtualbox.org/wiki/Downloads). Pick the
 version that matches your OS under the **VirtualBox platform packages** section.
 
-2. (Install Vagrant)[http://www.vagrantup.com/downloads]. Pick the package
+2. [Install Vagrant](http://www.vagrantup.com/downloads). Pick the package
 that matches your OS.
 
 3. `cd` into the root of your lambda-api project directory.
@@ -57,7 +57,7 @@ that matches your OS.
 
 This is by no means intended to be a conprehensive guide to all things Vagrant.
 If you want that, feel free to check out
-(the docs)[https://docs.vagrantup.com/v2/].
+[the docs](https://docs.vagrantup.com/v2/).
 
 * `vagrant up` - This command creates and configures guest machines according
 to your `Vagrantfile`.
