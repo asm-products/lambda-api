@@ -9,9 +9,10 @@ class AuthToken < ActiveRecord::Base
   private
 
   def set_token
-    begin
+    loop do
       self.token = SecureRandom.uuid
-    end while self.class.exists?(token: token)
+      break unless self.class.exists?(token: token)
+    end
   end
 
   def set_expires_at

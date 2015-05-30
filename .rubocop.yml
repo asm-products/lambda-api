@@ -5,6 +5,7 @@ AllCops:
     - 'db/schema.rb'
     - 'db/migrate/20150426231645_devise_create_users.rb'
     - 'config/initializers/devise.rb'
+    - 'Vagrantfile'
 
 Documentation:
   Enabled: false
