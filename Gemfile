@@ -33,6 +33,7 @@ group :development, :test do
   gem 'rspec-its', '~> 1.2.0'
   gem 'json-schema', '~> 2.5.1'
   gem 'database_cleaner', '~> 1.4.1'
+  gem 'faker', '~> 1.4.3'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -42,3 +43,4 @@ group :development, :test do
   # background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
