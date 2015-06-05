@@ -6,10 +6,11 @@ gem 'paranoia', '~> 2.1.2'
 gem 'high_voltage', '~> 2.3.0'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'font-awesome-sass', '~> 4.3.0'
-gem 'omniauth-google-oauth2', '~> 0.2.6'
+gem 'omniauth-google-oauth2', github: 'zquestz/omniauth-google-oauth2'
 gem 'omniauth-facebook-access-token', '~> 0.1.7'
 gem 'omniauth-twitter-access-token', '~> 0.0.2'
 gem 'figaro'
+gem 'quiet_assets'
 
 # Rails 4.2 Defaults
 gem 'rails', '4.2.0'
@@ -43,4 +44,3 @@ group :development, :test do
   # background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-

@@ -5,4 +5,3 @@ describe 'factories' do
     FactoryGirl.lint
   end
 end
-

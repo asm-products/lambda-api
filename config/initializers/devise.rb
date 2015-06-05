@@ -236,6 +236,7 @@
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :google_oauth2, ENV['google_client_id'], ENV['google_client_secret'], provider_ignores_state: true
   config.omniauth :facebook_access_token, ENV['facebook_client_id'], ENV['facebook_client_secret']
+  config.omniauth :twitter_access_token, ENV['twitter_client_id'], ENV['twitter_client_secret']
 
 
   # ==> Warden configuration

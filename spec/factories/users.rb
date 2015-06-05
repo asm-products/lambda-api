@@ -6,12 +6,12 @@ FactoryGirl.define do
     sequence(:email) { |n| Faker::Internet.email("#{first_name}-#{last_name}-#{n}") }
     password 'password'
 
-    factory :google_user do
+    factory :google_oauth2_user do
       provider 'google_oauth2'
       uid SecureRandom.uuid
     end
 
-    factory :facebook_user do
+    factory :facebook_access_token_user do
       provider 'facebook_access_token'
       uid SecureRandom.uuid
     end
