@@ -1,9 +1,19 @@
 FactoryGirl.define do
   factory :user do
-    first_name 'first_name'
-    last_name 'last_name'
-    biography 'I am saying really cool things about myself.'
-    email 'test@test.com'
+    first_name { Faker::Name.first_name }
+    last_name { Faker::Name.last_name }
+    biography { Faker::Lorem.sentence }
+    sequence(:email) { |n| Faker::Internet.email("#{first_name}-#{last_name}-#{n}") }
     password 'password'
+
+    factory :google_oauth2_user do
+      provider 'google_oauth2'
+      uid SecureRandom.uuid
+    end
+
+    factory :facebook_access_token_user do
+      provider 'facebook_access_token'
+      uid SecureRandom.uuid
+    end
   end
 end
