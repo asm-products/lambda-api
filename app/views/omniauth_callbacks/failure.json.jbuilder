@@ -1,1 +1,1 @@
-json.error 'Cannot authenticated.'
+json.error 'Cannot authenticate.'
