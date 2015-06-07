@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
   validates :first_name, presence: true
   validates :last_name, presence: true
 
- after_create :create_auth_token
+  after_create :create_auth_token
 
   def games
     Game.where('player_1_id = :id or player_2_id = :id', id: id)

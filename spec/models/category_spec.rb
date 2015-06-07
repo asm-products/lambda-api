@@ -4,17 +4,24 @@ describe Category, type: :model do
   describe 'relationships' do
     it { is_expected.to belong_to(:parent).inverse_of(:children) }
 
-    it { is_expected.to have_many(:games).inverse_of(:category)
-         .dependent(:destroy) }
+    it do
+      is_expected.to have_many(:games).inverse_of(:category).dependent(:destroy)
+    end
 
-    it { is_expected.to have_many(:category_gems).inverse_of(:category)
-         .dependent(:destroy) }
+    it do
+      is_expected.to have_many(:category_gems).inverse_of(:category)
+        .dependent(:destroy)
+    end
 
-    it { is_expected.to have_many(:questions).inverse_of(:category)
-         .dependent(:destroy) }
+    it do
+      is_expected.to have_many(:questions).inverse_of(:category)
+        .dependent(:destroy)
+    end
 
-    it { is_expected.to have_many(:children).with_foreign_key('parent_id')
-         .class_name(:'Category').inverse_of(:parent).dependent(:destroy) }
+    it do
+      is_expected.to have_many(:children).with_foreign_key('parent_id')
+        .class_name(:'Category').inverse_of(:parent).dependent(:destroy)
+    end
   end
 
   describe 'validations' do

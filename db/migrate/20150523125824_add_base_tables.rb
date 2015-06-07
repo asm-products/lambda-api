@@ -1,4 +1,5 @@
 class AddBaseTables < ActiveRecord::Migration
+  # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
   def change
     create_table :answers do |t|
       t.references :question, index: true, null: false
@@ -89,4 +90,5 @@ class AddBaseTables < ActiveRecord::Migration
     add_foreign_key :rounds, :games
     add_foreign_key :statistics, :users
   end
+  # rubocop:enable Metrics/MethodLength, Metrics/AbcSize
 end

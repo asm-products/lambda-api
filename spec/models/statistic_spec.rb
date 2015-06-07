@@ -2,8 +2,10 @@ require 'rails_helper'
 
 describe Statistic, type: :model do
   describe 'enum' do
-    it { is_expected.to define_enum_for(:statistic_type)
-         .with([:streak, :games_played, :games_won, :correct_responses]) }
+    it do
+      is_expected.to define_enum_for(:statistic_type)
+        .with([:streak, :games_played, :games_won, :correct_responses])
+    end
   end
 
   describe 'relationships' do

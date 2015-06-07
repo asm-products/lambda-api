@@ -19,3 +19,6 @@ Style/BlockComments:
 
 Style/AlignParameters:
   EnforcedStyle: with_fixed_indentation
+
+Style/AlignHash:
+  Enabled: false
