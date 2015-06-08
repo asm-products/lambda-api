@@ -1,5 +1,5 @@
 class AuthToken < ActiveRecord::Base
-  belongs_to :user
+  belongs_to :user, inverse_of: :auth_tokens
 
   validates :user, presence: true
 
