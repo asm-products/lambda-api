@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/projects/eb847c55-9fcf-4aac-9ba5-feb6f6af3a83/445095/badge.svg)](https://semaphoreci.com/avargas/lambda-api)
+
 # Lambda (API)
 
 <a href="https://assembly.com/lambda/bounties?utm_campaign=assemblage&utm_source=lambda&utm_medium=repo_badge"><img src="https://asm-badger.herokuapp.com/lambda/badges/tasks.svg" height="24px" alt="Open Tasks" /></a>
