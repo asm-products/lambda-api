@@ -28,7 +28,7 @@ class OmniauthCallbacksController < ApplicationController
     if @user.persisted?
       respond_to do |format|
         format.html { sign_in_and_redirect @user, event: :authentication }
-        format.json
+        format.json { sign_in @user, store: false }
       end
     else
       redirect_to new_user_registration_url

@@ -4,10 +4,12 @@ describe 'Categories', type: :request do
   let!(:categories) { create_list :category, 5 }
   subject { response }
 
-  # TODO: add spec for authentication
   let(:user) { create :user }
+  before { sign_in user }
 
   describe 'GET /categories' do
+    include_examples 'authentication required', :get, '/categories'
+
     before { get_json '/categories'  }
     let(:obj) { JSON.parse response.body }
 
