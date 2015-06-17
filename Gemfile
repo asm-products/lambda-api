@@ -11,6 +11,7 @@ gem 'omniauth-facebook-access-token', '~> 0.1.7'
 gem 'omniauth-twitter-access-token', '~> 0.0.2'
 gem 'figaro'
 gem 'quiet_assets'
+gem 'pundit', '1.0.1'
 
 # Rails 4.2 Defaults
 gem 'rails', '4.2.0'
