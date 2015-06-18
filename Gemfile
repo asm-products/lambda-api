@@ -12,6 +12,7 @@ gem 'omniauth-twitter-access-token', '~> 0.0.2'
 gem 'figaro'
 gem 'quiet_assets'
 gem 'pundit', '1.0.1'
+gem 'json-jwt', '~> 1.0.0'
 
 # Rails 4.2 Defaults
 gem 'rails', '4.2.0'
@@ -37,6 +38,7 @@ group :development, :test do
   gem 'database_cleaner', '~> 1.4.1'
   gem 'faker', '~> 1.4.3'
   gem 'coveralls', require: false
+  gem 'timecop'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
