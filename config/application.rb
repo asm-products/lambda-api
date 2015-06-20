@@ -25,6 +25,5 @@ module LambdaApi
 
     config.generators.assets = false
     config.generators.helper = false
-    config.generators.views = false
   end
 end
