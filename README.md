@@ -1,5 +1,6 @@
 [![Build Status](https://semaphoreci.com/api/v1/projects/eb847c55-9fcf-4aac-9ba5-feb6f6af3a83/445095/badge.svg)](https://semaphoreci.com/avargas/lambda-api)
 [![Coverage Status](https://coveralls.io/repos/asm-products/lambda-api/badge.svg?branch=75_add_coveralls)](https://coveralls.io/r/asm-products/lambda-api?branch=75_add_coveralls)
+[![Code Climate](https://codeclimate.com/github/asm-products/lambda-api/badges/gpa.svg)](https://codeclimate.com/github/asm-products/lambda-api)
 
 # Lambda (API)
 
