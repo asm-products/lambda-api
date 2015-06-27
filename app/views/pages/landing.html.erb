@@ -18,23 +18,25 @@
 
 <article class="hero">
 	<div class="code_lines effect_hero"></div>
-	<div class="row">
-		<div class="medium-12 medium-centered columns">
-			<figure class="lambdy_hero">
-				<%= image_tag "lambdy-hero.png" %>
-			</figure>
+	<div class='hero-content'>
+		<div class="row">
+			<div class="medium-12 medium-centered columns">
+				<figure class="lambdy_hero">
+					<%= image_tag "lambdy-hero.png" %>
+				</figure>
 
-			<div class="header_hero">
-				<h1 class="title">Play Lambda</h1>
-				<p>
-					Advance your coding <br>skills the fun way.
+				<div class="header_hero">
+					<h1 class="title">Play Lambda</h1>
+					<p>
+					Master Code the Fun Way
 					<a class="more round" href="#welcome" title="">
 						<%= icon('chevron-down') %>
 					</a>
-				</p>
-				<a href="#subscribe" title="" class="button radius signup show-for-small-only">
-					Sign Up
-				</a>
+					</p>
+					<a href="#subscribe" title="" class="button radius signup show-for-small-only">
+						Sign Up
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -70,8 +72,9 @@
 </article><!-- /.welcome -->
 
 <article class="rewards section">
-	<div class="gradient-border absolute"></div>
+	<!-- <div class="gradient-border absolute"></div> -->
 
+	<!--
 	<header class="header_rewards header_section show-for-medium-up row">
 		<div class="large-8 large-centered columns">
 			<ul class="button-group radius even-2">
@@ -84,6 +87,7 @@
 			</p>
 		</div>
 	</header>
+	-->
 
 	<section class="content_rewards row">
 		<article class="header_rewards header_section columns">
@@ -121,19 +125,19 @@
 		</article>
 	</section>
 
-	<div class="gradient-border"></div>
+	<!-- <div class="gradient-border"></div> -->
 </article><!-- /.rewards -->
 
 <article class="languages section">
 	<header class="header_languages header_section row">
-		<div class="columns">
+		<div class="medium-16 columns">
 			<p class="primary">Our first three languages</p>
 			<h2 class="title">Practice Go, Javascript and Ruby</h2>
 		</div>
 	</header>
 
 	<section class="content_languages row">
-		<div class="columns">
+		<div class="medium-12 medium-centered columns">
 			<ul class="small-block-grid-3">
 				<li>
 					<figure><%= image_tag "go-badge.png" %></figure>
@@ -152,7 +156,7 @@
 	</section>
 
 	<footer class="footer_languages show-for-medium-up row">
-		<div class="columns">
+		<div class="medium-16 columns">
 			<p class="primary">What languages should we add next?</p>
 			<p class="contact">Let us know at <a href="mailto:hello@playlambda.com" title="">hello@playlambda.com</a> </p>
 		</div>
