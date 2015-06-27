@@ -96,7 +96,7 @@ a.button {
 	padding: $column-gutter*1.5 0;
 
 	@media only screen and (min-width: 40.063em) {
-		padding: $column-gutter*2 0;
+		padding: $column-gutter*3 0;
 	}
 }
 
@@ -118,12 +118,44 @@ a.button {
  * Hero section styles
  */
 .hero {
-	background-color: $jungle-dark-color;
+	background-color: #20344C;
 	padding-bottom: rem-calc(60);
 	padding-top: rem-calc(120);
 	position: relative;
+	background-image: image-url('hero-bg.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 
-	@include radial-gradient(#3a6f75, #273247);
+	//@include radial-gradient(#3a6f75, #273247);
+
+	@mixin shadow {
+		background-repeat: no-repeat;
+		content: '';
+		display: block;
+		height: 100%;
+		opacity: 0.5;
+		position: absolute;
+		width: 100%;
+		@media #{$small-only} {
+			display: none;
+		}
+	}
+
+	&::before {
+		@include shadow;
+		background-image: image-url('hero-top-left.png');
+		background-position: top left;
+		left: 0;
+		top: 0;
+	}
+	&::after{
+		@include shadow;
+		background-image: image-url('hero-bottom-right.png');
+		background-position: bottom right;
+		bottom: 0;
+		right: 0;
+	}
 }
 
 .effect_hero {
@@ -140,7 +172,7 @@ a.button {
 }
 
 .code_lines {
-	background-image: url(../images/hero-code-lines.png);
+	background-image: image-url('hero-code-lines.png');
 }
 
 .lambdy_hero {
@@ -169,6 +201,7 @@ a.button {
 	margin-top: -(rem-calc(80));
 	text-align: center;
 	vertical-align: middle;
+	z-index: 10;
 
 	@media only screen and (min-width: 40.063em) {
 		display: table-cell;
@@ -199,7 +232,7 @@ a.button {
 		}
 
 		p {
-			font-size: rem-calc(22);
+			font-size: rem-calc(26);
 			margin-bottom: 0;
 		}
 	}
@@ -213,12 +246,13 @@ a.button {
 	display: none;
 	height: rem-calc(48);
 	line-height: 1.6;
-	margin-left: $column-gutter*2;
+	margin-left: $column-gutter;
 	margin-top: -(rem-calc(24));
 	position: absolute;
 	text-align: center;
 	top: 50%;
 	width: rem-calc(48);
+	z-index: 10;
 
 	&:hover {
 		color: $white-dark-color;
@@ -302,7 +336,6 @@ a.button {
 // Motivational rewards section
 .rewards {
 	background-color: #F6F6F6;
-	padding-bottom: 0;
 	position: relative;
 
 	.title {
@@ -393,6 +426,10 @@ a.button {
 }
 
 .footer_languages {
+	//p {
+		//font-size: rem-calc(20);
+	//}
+
 	.contact {
 		color: $grey-color;
 		font-weight: 300;
@@ -413,7 +450,10 @@ a.button {
  */
 .subscribe {
 	background-color: #334C5A;
-	@include radial-gradient(#3a6f75, #273247);
+	//@include radial-gradient(#3a6f75, #273247);
+	background-image: image-url('subscribe-bg.png');
+	background-size: cover;
+	background-position: center center;
 }
 
 .header_subscribe {
@@ -458,7 +498,7 @@ a.button {
 	@include radial-gradient($slate-color, $slate-dark-color);
 
 	@media #{$medium-up} {
-		padding: $column-gutter*3;
+		padding: $column-gutter*2;
 	}
 }
 
