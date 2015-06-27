@@ -495,7 +495,11 @@ a.button {
  */
 .footer {
 	background-color: $slate-color;
-	@include radial-gradient($slate-color, $slate-dark-color);
+	//@include radial-gradient($slate-color, $slate-dark-color);
+	background-image: image-url('footer-bg.jpg');
+	background-size: cover;
+	background-position: bottom center;
+
 
 	@media #{$medium-up} {
 		padding: $column-gutter*2;
