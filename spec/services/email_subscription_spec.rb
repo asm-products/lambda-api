@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 describe EmailSubscription do
-
   subject { EmailSubscription.new }
   let(:api) { instance_double('Mailchimp::API') }
   let(:lists) { instance_double('Mailchimp::Lists') }
@@ -10,7 +9,6 @@ describe EmailSubscription do
 
   before do
     allow(api).to receive(:lists).and_return(lists)
-    described_class.mailchimp = api
   end
 
   it 'defaults to the mocked mailchimp api' do
@@ -18,7 +16,10 @@ describe EmailSubscription do
   end
 
   describe '#subcribe_launch' do
-    before { ENV['mailchimp_launch_subscription_list_id'] = list_id }
+    before do
+      described_class.mailchimp = api
+      ENV['mailchimp_launch_subscription_list_id'] = list_id
+    end
     it 'subscribes to Mailchimp' do
       expect(lists).to receive(:subscribe).with list_id, email: email
       subject.subscribe_launch email

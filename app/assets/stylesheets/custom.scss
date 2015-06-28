@@ -45,7 +45,7 @@
 	}
 }
 
-a.button {
+.button {
 	background-color: $lime-dark-color;
 	border-top: 2px solid $lime-color;
 
@@ -482,11 +482,12 @@ a.button {
 		text-align: center;
 	}
 
-	a.button {
+	.button {
 		display: block;
 		color: $slate-color;
 		font-size: rem-calc(20);
 		line-height: 1.9;
+    width: 100%;
 	}
 }
 

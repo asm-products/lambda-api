@@ -172,10 +172,20 @@
 
 	<section class="content_subscribe row">
 		<div class="medium-8 large-5 medium-centered columns">
-			<form>
+      <form id='subscription-form' action='<%= subscriptions_path %>' method='POST' data-abide='ajax'>
 				<p>Be the first to know when we launch</p>
-				<input type="text" aria-label="Email adress" id="email-subscribe" placeholder="Your Email Adress" class="radius">
-				<a href="#" class="button radius">Count Me In!</a>
+				<div data-alert class="alert-box success" style='display: none'>
+          <strong>Thanks for your support!</strong> We've sent you an email to
+          confirm that you'd like to receive updates on our progress.
+					<a href="#" class="close">&times;</a>
+				</div>
+				<div data-alert class="alert-box alert" style='display: none'>
+					<strong>Uh oh!</strong> <span class='error-message'></span>
+					<a href="#" class="close">&times;</a>
+				</div>
+				<input type="email" required aria-label="Email adress" id="email-subscribe" placeholder="Your Email Adress" class="radius">
+				<small class="error radius">An email address is required.</small>
+				<button type='submit' class="button radius">Count Me In!</a>
 			</form>
 		</div>
 	</section>
@@ -203,3 +213,9 @@
 		</div>
 	</div>
 </footer><!-- /.footer -->
+
+<%= content_for :scripts do %>
+	<%= javascript_tag do %>
+		new EmailSubscriptionForm($('#subscription-form'));
+	<% end %>
+<% end %>

@@ -1,0 +1,1 @@
+json.email params[:email]
