@@ -13,6 +13,8 @@ gem 'figaro'
 gem 'quiet_assets'
 gem 'pundit', '1.0.1'
 gem 'json-jwt', '~> 1.0.0'
+gem 'email_validator', '~> 1.6.0'
+gem 'mailchimp-api', '~> 2.0.6'
 
 # Rails 4.2 Defaults
 gem 'rails', '4.2.0'
