@@ -1,6 +1,220 @@
-<div class="row">
-  <div class="col-xs-12 text-center">
-    <h1>Welcome to Lambda, assemblers!</h1>
-    <p>Made with <%= icon('heart') %> by the Assembly community.</p>
-  </div>
-</div>
+<header class="header">
+	<div class="row">
+		<div class="medium-8 columns">
+			<a href="#" title="">
+				<figure class="logo">
+					<%= image_tag "lambda-logo.png" %>
+				</figure>
+			</a>
+		</div>
+
+		<div class="text-right medium-8 show-for-medium-up columns">
+			<a href="#subscribe" title="" class="button signup bg radius">
+				Sign Up
+			</a>
+		</div>
+	</div>
+</header><!-- /.header -->
+
+<article class="hero">
+	<div class="code_lines effect_hero"></div>
+	<div class='hero-content'>
+		<div class="row">
+			<div class="medium-12 medium-centered columns">
+				<figure class="lambdy_hero">
+					<%= image_tag "lambdy-hero.png" %>
+				</figure>
+
+				<div class="header_hero">
+					<h1 class="title">Play Lambda</h1>
+					<p>
+					Master Code the Fun Way
+					<a class="more round" href="#welcome" title="">
+						<%= icon('chevron-down') %>
+					</a>
+					</p>
+					<a href="#subscribe" title="" class="button radius signup show-for-small-only">
+						Sign Up
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article><!-- /.hero -->
+
+<article id="welcome" class="welcome section">
+	<header class="header_welcome header_section row">
+		<div class="small-13 large-12 small-centered columns">
+			<h2 class="title primary">Developers, welcome to your new addiction.</h2>
+			<h3 class="description">An iOS game that tests your coding chops.</h3>
+		</div>
+	</header>
+
+	<section class="content_welcome row">
+		<article class="screen_welcome large-push-5 large-6 columns">
+			<figure>
+				<%= image_tag "lambda-ios-screen.png" %>
+			</figure>
+		</article>
+		<article class="questions_welcome  medium-8 large-pull-6 large-5 columns">
+			<h4 class="subtitle">Community-Generated Questions</h4>
+			<p>Answer an endless stream of questions that keep you up-to-date on best practices.</p>
+			<p>Submit your own and curate question submissions.</p>
+		</article>
+		<hr class="separator show-for-small-only">
+		<article class="trivia_welcome  medium-8 large-5 columns">
+			<h4 class="subtitle">Fast-paced Trivia Challenges</h4>
+			<p>Compete in rounds of timed questions against fellow coders.</p>
+			<p>Test your logic and expand your knowledge base.</p>
+		</article>
+	</section>
+</article><!-- /.welcome -->
+
+<article class="rewards section">
+	<!-- <div class="gradient-border absolute"></div> -->
+
+	<!--
+	<header class="header_rewards header_section show-for-medium-up row">
+		<div class="large-8 large-centered columns">
+			<ul class="button-group radius even-2">
+				<li class="beginner"><span class="button btn-white">Beginner</span></li>
+				<li class="expert"><span class="button">Expert</span></li>
+			</ul>
+			<p>
+				Two levels of questions. <br>
+				Tka on challenges that match your skills.
+			</p>
+		</div>
+	</header>
+	-->
+
+	<section class="content_rewards row">
+		<article class="header_rewards header_section columns">
+			<h2 class="title">Motivational Rewards</h2>
+			<p class="primary">Bring out your competitive side & improve your professional skills.</p>
+		</article>
+
+		<article class="content_rewards columns">
+			<div class="row">
+				<div class="item_reward text-right medium-8 columns">
+					<p>Top the <span>Leaderboards</span></p>
+					<figure>
+						<%= image_tag "leaderboard_reward.png" %>
+					</figure>
+				</div>
+				<div class="item_reward medium-8 columns">
+					<figure>
+						<%= image_tag "streak_reward.png" %>
+					</figure>
+					<p>Keep your daily <span>streak running</span></p>
+				</div>
+				<div class="item_reward text-right medium-8 columns">
+					<p>Earn Gems & <span>advance levels</span></p>
+					<figure>
+						<%= image_tag "gems_reward.png" %>
+					</figure>
+				</div>
+				<div class="item_reward medium-8 columns">
+					<figure>
+						<%= image_tag "friends_reward.png" %>
+					</figure>
+					<p>Challenge your <span>friends</span></p>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<!-- <div class="gradient-border"></div> -->
+</article><!-- /.rewards -->
+
+<article class="languages section">
+	<header class="header_languages header_section row">
+		<div class="medium-16 columns">
+			<p class="primary">Our first three languages</p>
+			<h2 class="title">Practice Go, Javascript and Ruby</h2>
+		</div>
+	</header>
+
+	<section class="content_languages row">
+		<div class="medium-12 medium-centered columns">
+			<ul class="small-block-grid-3">
+				<li>
+					<figure><%= image_tag "go-badge.png" %></figure>
+					<figcaption class="sr-only">Go Language</figcaption>
+				</li>
+				<li>
+					<figure><%= image_tag "javascript-badge.png" %></figure>
+					<figcaption class="sr-only">Javascript Language</figcaption>
+				</li>
+				<li>
+					<figure><%= image_tag "ruby-badge.png" %></figure>
+					<figcaption class="sr-only">Ruby Language</figcaption>
+				</li>
+			</ul>
+		</div>      
+	</section>
+
+	<footer class="footer_languages show-for-medium-up row">
+		<div class="medium-16 columns">
+			<p class="primary">What languages should we add next?</p>
+			<p class="contact">Let us know at <a href="mailto:hello@playlambda.com" title="">hello@playlambda.com</a> </p>
+		</div>
+	</footer>
+</article><!-- /.languages -->
+
+<article id="subscribe" class="subscribe section">
+	<header class="header_subscribe header_section row">
+		<div class="columns">
+			<h3 class="title">Join the Waiting List</h3>
+		</div>
+	</header>
+
+	<section class="content_subscribe row">
+		<div class="medium-8 large-5 medium-centered columns">
+      <form id='subscription-form' action='<%= subscriptions_path %>' method='POST' data-abide='ajax'>
+				<p>Be the first to know when we launch</p>
+				<div data-alert class="alert-box success" style='display: none'>
+          <strong>Thanks for your support!</strong> We've sent you an email to
+          confirm that you'd like to receive updates on our progress.
+					<a href="#" class="close">&times;</a>
+				</div>
+				<div data-alert class="alert-box alert" style='display: none'>
+					<strong>Uh oh!</strong> <span class='error-message'></span>
+					<a href="#" class="close">&times;</a>
+				</div>
+				<input type="email" required aria-label="Email adress" id="email-subscribe" placeholder="Your Email Adress" class="radius">
+				<small class="error radius">An email address is required.</small>
+				<button type='submit' class="button radius">Count Me In!</a>
+			</form>
+		</div>
+	</section>
+</article><!-- /.subscribe -->
+
+<footer class="footer section">
+	<div class="row">
+		<div class="medium-7 columns">
+			<ul class="social_footer">
+				<li>
+					<a href="http://facebook.com/playlambda/" target="_blank" title="Follow us on Facebook">
+						<%= icon('facebook') %>
+					</a>
+				</li>
+				<li>
+					<a href="http://twitter.com/playlambda/" target="_blank" title="Follow us on Twitter">
+						<%= icon('twitter') %>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="medium-9 columns">
+			<p class="credit_footer">Made with <%= icon('heart') %> by the Assembly community.</p>
+		</div>
+	</div>
+</footer><!-- /.footer -->
+
+<%= content_for :scripts do %>
+	<%= javascript_tag do %>
+		new EmailSubscriptionForm($('#subscription-form'));
+	<% end %>
+<% end %>

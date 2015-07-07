@@ -3,4 +3,6 @@ Rails.application.routes.draw do
                      controllers: { omniauth_callbacks: 'omniauth_callbacks' }
 
   resources :categories, only: %i(index)
+
+  resources :subscriptions, only: [:create]
 end
