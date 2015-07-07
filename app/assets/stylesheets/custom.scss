@@ -489,6 +489,12 @@
 		line-height: 1.9;
     width: 100%;
 	}
+
+	.error small.error {
+		border-radius: $global-radius;
+		margin: 0 0 $column-gutter / 2;
+		padding: $column-gutter / 2;
+	}
 }
 
 /**
